@@ -1,0 +1,46 @@
+.main-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+.block {
+    border: 1px solid red;
+    width: 33.33333%;
+    height: 150px;
+    display: flex; 
+    flex-direction: column-reverse; 
+    align-items: center;
+
+}
+
+.first-disk {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: red;
+    width: 25%;
+    height:20px ;
+}
+.second-disk  {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: yellow;
+    width: 40%;
+    height:20px ;
+}
+.third-disk  {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: blue;
+    width: 65%;
+    height:20px ;
+}
+.fourth-disk  {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: goldenrod;
+    width: 80%;
+    height:20px ;
+}
+
+.selected {
+    border: 3px solid green;
+}
