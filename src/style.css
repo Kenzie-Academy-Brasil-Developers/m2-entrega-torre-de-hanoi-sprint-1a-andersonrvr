@@ -3,9 +3,9 @@
     justify-content: space-evenly;
 }
 .block {
-    border: 1px solid red;
+    border: 1px solid black;
     width: 33.33333%;
-    height: 150px;
+    height: 110px;
     display: flex; 
     flex-direction: column-reverse; 
     align-items: center;
@@ -43,4 +43,54 @@
 
 .selected {
     border: 3px solid green;
+}
+.names {
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    text-align: center;
+    font-size: 25px;
+}
+p {
+    font-weight: bold;
+}
+button {
+    padding: 3px;
+    color: white;
+    background-color: rgb(49, 49, 49);
+    border-radius: 5px;
+}
+#victory {
+    color: green;
+}
+@media (min-width:768px) {
+    .block {
+        height: 150px;
+    }
+}
+@media (min-width:1024px){
+    .block {
+        height: 200px;
+    }
+    .first-disk {
+        height: 30px;
+    }
+    .second-disk {
+        height: 30px;
+    }
+    .third-disk {
+        height: 30px;
+    }
+    .fourth-disk {
+        height: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    button {
+        padding: 5px;
+        color: white;
+        background-color: black;
+    }
 }

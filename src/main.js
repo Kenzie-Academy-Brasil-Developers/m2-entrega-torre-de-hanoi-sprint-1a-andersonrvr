@@ -8,11 +8,13 @@ disk3.classList.add('third-disk')
 let disk4 = document.createElement('div')
 disk4.classList.add('fourth-disk')
 
+
 let mainBlock = document.querySelector('.main-block')
 //selecionando blocos que os discos podem ''flutuar''
 let block1 = document.createElement('section')
 block1.classList.add('block')
 block1.classList.add('first-block')
+
 
 mainBlock.appendChild(block1)
 let block2 = document.createElement('section')
@@ -77,4 +79,5 @@ resetBtn.addEventListener('click', function(){
     block1.appendChild(disk1)
     count = 0
     countNum.innerHTML = count
+    victory.innerHTML = ''
 })
