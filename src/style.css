@@ -40,6 +40,13 @@
     width: 80%;
     height:20px ;
 }
+.fifth-disk  {
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: purple;
+    width: 95%;
+    height:20px ;
+}
 
 .selected {
     border: 3px solid green;
@@ -83,6 +90,9 @@ button {
         height: 30px;
     }
     .fourth-disk {
+        height: 30px;
+    }
+    .fifth-disk {
         height: 30px;
     }
     p {
