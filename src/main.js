@@ -99,7 +99,7 @@ resetBtn.addEventListener('click', function(){
     block1.appendChild(disk1)
     count = 0
     countNum.innerHTML = count
-    victory.innerHTML = ''
+    victory.innerText = ''
 
 })
 
