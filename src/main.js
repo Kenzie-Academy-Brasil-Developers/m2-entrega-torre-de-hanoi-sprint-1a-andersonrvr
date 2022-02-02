@@ -94,9 +94,6 @@ if(disk4.parentElement !== null){
 let resetBtn = document.getElementById('reset')
 
 resetBtn.addEventListener('click', function(){
-    arr[0].lastElementChild.classList.remove('selected')
-    arr = []
-
     block1.appendChild(disk3)
     block1.appendChild(disk2)
     block1.appendChild(disk1)
