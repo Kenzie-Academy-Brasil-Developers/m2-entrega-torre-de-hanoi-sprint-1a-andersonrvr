@@ -94,10 +94,11 @@ if(disk4.parentElement !== null){
 let resetBtn = document.getElementById('reset')
 
 resetBtn.addEventListener('click', function(){
+    block1.appendChild(disk4)
     block1.appendChild(disk3)
     block1.appendChild(disk2)
     block1.appendChild(disk1)
-
+    block1.removeChild(disk5)
     count = 0
     countNum.innerText = count
     victory.innerText = ''
@@ -126,10 +127,6 @@ mediumBtn.addEventListener('click', function(){
     victory.innerText = ''
     count = 0
     countNum.innerText = count
-
-    
-
-    
 })
 hardBtn.addEventListener('click', function(){
 
