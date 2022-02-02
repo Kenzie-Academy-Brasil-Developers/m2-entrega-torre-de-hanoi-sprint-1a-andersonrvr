@@ -56,7 +56,7 @@ if(disk4.parentElement !== null){
     }
 } else {
     if(block3.childElementCount === 3) {
-        victory.innerHTML = 'Parabens, você ganhou'
+        victory.innerText= 'Parabens, você ganhou'
 
     }
 }
@@ -64,7 +64,7 @@ if(disk4.parentElement !== null){
     let arr = []
     mainBlock.addEventListener('click', blockTarget)
      let count = 0
-     countNum.innerHTML = count
+     countNum.innerText = count
     function blockTarget (event) {
       if (event.target.nodeName === "SECTION"){
         if(arr.length >= 2) {
@@ -83,7 +83,7 @@ if(disk4.parentElement !== null){
              arr[1].appendChild(ultimo)
              ultimo.classList.remove('selected')
              count ++
-             countNum.innerHTML = count
+             countNum.innerText = count
         }
     winCase()
         ultimo.classList.remove('selected')
@@ -97,8 +97,9 @@ resetBtn.addEventListener('click', function(){
     block1.appendChild(disk3)
     block1.appendChild(disk2)
     block1.appendChild(disk1)
+
     count = 0
-    countNum.innerHTML = count
+    countNum.innerText = count
     victory.innerText = ''
 
 })
@@ -111,9 +112,10 @@ easyBtn.addEventListener('click', function(){
     block1.appendChild(disk1)
     block1.removeChild(disk4)
     block1.removeChild(disk5)
+    victory.innerText = ''
     count = 0
-    countNum.innerHTML = count
-    victory.innerHTML = ''
+    countNum.innerText = count
+    victory.innerText = ''
 
 })
 mediumBtn.addEventListener('click', function(){
@@ -123,9 +125,11 @@ mediumBtn.addEventListener('click', function(){
     block1.appendChild(disk2)
     block1.appendChild(disk1) 
     block1.removeChild(disk5)
+    victory.innerText = ''
     count = 0
-    countNum.innerHTML = count
-    victory.innerHTML = ''
+    countNum.innerText = count
+
+    
 
     
 })
@@ -136,8 +140,8 @@ hardBtn.addEventListener('click', function(){
     block1.appendChild(disk3)
     block1.appendChild(disk2)
     block1.appendChild(disk1)
-    victory.innerHTML = ''
+    victory.innerText = ''
     count = 0
-    countNum.innerHTML = count
-    victory.innerHTML = ''
+    countNum.innerText = count
+
 })
