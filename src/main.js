@@ -115,8 +115,6 @@ easyBtn.addEventListener('click', function(){
     victory.innerText = ''
     count = 0
     countNum.innerText = count
-    victory.innerText = ''
-
 })
 mediumBtn.addEventListener('click', function(){
 
