@@ -48,8 +48,7 @@ function  winCase () {
     victory.innerHTML = 'Parabens, você ganhou'
 
     }
-}
-if(disk4.parentElement !== null){
+} else if (disk4.parentElement !== null){
     if(block3.childElementCount === 4) {
         victory.innerHTML = 'Parabens, você ganhou'
 
@@ -99,6 +98,8 @@ resetBtn.addEventListener('click', function(){
     block1.appendChild(disk2)
     block1.appendChild(disk1)
     block1.removeChild(disk5)
+    block2.removeChild(disk5)
+    block3.removeChild(disk5)
     count = 0
     countNum.innerText = count
     victory.innerText = ''
@@ -113,7 +114,11 @@ easyBtn.addEventListener('click', function(){
     block1.appendChild(disk1)
     block1.removeChild(disk4)
     block1.removeChild(disk5)
-    victory.innerText = ''
+    block2.removeChild(disk5)
+    block2.removeChild(disk4)
+    block3.removeChild(disk5)    
+    block3.removeChild(disk4)
+    victory.innerText = ' '
     count = 0
     countNum.innerText = count
 })
@@ -124,6 +129,8 @@ mediumBtn.addEventListener('click', function(){
     block1.appendChild(disk2)
     block1.appendChild(disk1) 
     block1.removeChild(disk5)
+    block2.removeChild(disk5)
+    block3.removeChild(disk5)
     victory.innerText = ''
     count = 0
     countNum.innerText = count
